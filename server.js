@@ -4,8 +4,7 @@ const express = require("express");
 const path = require("path");
 const multer = require("multer");
 const fse = require("fs-extra");
-//const httpPort = 10000;
-const httpPort = PORT;
+const httpPort = process.env.PORT || 10000;
 
 const app = express();
 app.use(express.json());
