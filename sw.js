@@ -8,6 +8,7 @@ self.addEventListener('install', e => {
                 '/app.js',
                 'public/img/camera_icon.png',
                 'public/stylesheets/styles.css',
+                '/favicon.ico'
             ]);
         })
     );
