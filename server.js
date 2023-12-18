@@ -4,7 +4,8 @@ const express = require("express");
 const path = require("path");
 const multer = require("multer");
 const fse = require("fs-extra");
-const httpPort = 3000;
+//const httpPort = 10000;
+const httpPort = PORT;
 
 const app = express();
 app.use(express.json());
@@ -59,5 +60,5 @@ app.get("/snaps", function (req, res) {
 });
 
 app.listen(httpPort, function () {
-  console.log(`HTTP listening on port: ${httpPort}`);
+  console.log(`HTTP listening on: http://localhost:${httpPort}`);
 });
